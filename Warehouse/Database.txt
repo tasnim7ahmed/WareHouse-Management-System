@@ -1,0 +1,31 @@
+
+SQL*Plus: Release 11.2.0.2.0 Production on Fri Oct 20 03:47:21 2017
+
+Copyright (c) 1982, 2014, Oracle.  All rights reserved.
+
+SQL> connect warehouse/123;
+Connected.
+SQL> desc admin;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ NAME                                               VARCHAR2(50)
+ USERNAME                                  NOT NULL VARCHAR2(50)
+ PASSWORD                                           VARCHAR2(50)
+
+SQL> desc sales;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ NAME                                               VARCHAR2(50)
+ USERNAME                                  NOT NULL VARCHAR2(50)
+ PASSWORD                                           VARCHAR2(50)
+
+SQL> desc item;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ ID                                                 NUMBER(38)
+ NAME                                      NOT NULL VARCHAR2(50)
+ BRAND                                              VARCHAR2(50)
+ TYPE                                               VARCHAR2(50)
+ QTY                                                NUMBER(38)
+
+SQL>
